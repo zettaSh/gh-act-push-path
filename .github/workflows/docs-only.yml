@@ -1,0 +1,13 @@
+name: Docs Updates
+
+on:
+  push:
+    paths:
+      - "docs/**"
+
+jobs:
+  docs-changes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify docs change
+        run: echo "doc directory files were updated."

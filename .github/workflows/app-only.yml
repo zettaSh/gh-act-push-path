@@ -1,0 +1,13 @@
+name: App Updates
+
+on:
+  push:
+    paths:
+      - "app/**"
+
+jobs:
+  app-changes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify app change
+        run: echo "app directory files were updated."
